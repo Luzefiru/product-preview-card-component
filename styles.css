@@ -1,0 +1,109 @@
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    background-color: hsl(30, 38%, 92%);
+    padding: 25vh 28vw;
+    
+}
+
+.card {
+    display: flex;
+    overflow: hidden; /* TAKE NOTE: this enables the rounded card corners, otherwise it is rigid */
+    border-radius: 16px;
+}
+
+.card-image,
+.card-contents {
+    flex: 1;
+}
+
+/* left side */
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* right side */
+
+.card-contents {
+    padding: 2rem;
+    background-color: white;
+}
+
+.card-contents > *,
+.card-contents > * > * {
+    margin: 0px;
+}
+
+.card-contents > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* heading, category, and description, prices (styling) */
+
+.card-contents .title,
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    margin: 0px;
+}
+
+.card-contents .category,
+.card-contents .description,
+.old-price {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-contents .description {
+    line-height: 1.5rem; /* TAKE NOTE: this adds line spacing between text */
+    font-size: 14px;
+}
+
+.card-contents .category {
+    margin-top: 0px;
+}
+
+/* prices */
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* add to cart button */
+
+.add-to-cart-button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 12px;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-to-cart-button .cart-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
